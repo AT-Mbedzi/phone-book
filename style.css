@@ -1,0 +1,194 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 24px 8px;
+}
+
+form {
+    background: #fff;
+    padding: 24px 32px;
+    margin: 24px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+label {
+    display: block;
+    margin-top: 16px;
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background: #0078d7;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #005fa3;
+}
+
+.avatar-center {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    margin-left: 40px;
+}
+
+.avatar-center img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 100%;
+    align-content: center;
+    background: #e0e0e0;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 24px;
+    flex-wrap: wrap;
+}
+
+.button-group button {
+    min-width: 100px;
+}
+
+/* Home page hero section */
+.hero {
+    background: linear-gradient(120deg, #0078d7 0%, #00c6fb 100%);
+    color: #fff;
+    padding: 48px 24px 32px 24px;
+    text-align: center;
+    border-radius: 0 0 24px 24px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    margin-bottom: 32px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+    opacity: 0.95;
+}
+
+.home-actions {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin: 32px 0;
+    flex-wrap: wrap;
+}
+
+.home-actions button,
+.home-actions a {
+    min-width: 36px;
+    min-height: 36px;
+    padding: 6px 14px;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s, border-radius 0.2s, box-shadow 0.2s;
+}
+
+.home-actions button:hover, .home-actions a:hover {
+    background: #34cf09;
+    color: #1fd828;
+    border-radius: 50%; /* Perfect circle */
+    box-shadow: 0 0 0 4px #b81e4a33;
+    transition: border-radius 0.2s, box-shadow 0.2s, background 0.2s, color 0.2s;
+}
+
+/* Contacts heading */
+.contacts-heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 24px;
+    margin-bottom: 16px;
+    color: #242b12;
+    letter-spacing: 1px;
+}
+
+/* Main center alignment */
+.main-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Table styling */
+#table {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 24px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .avatar-center {
+        margin-left: 0;
+        justify-content: center;
+    }
+    form {
+        padding: 16px 4px;
+        max-width: 98vw;
+    }
+    .avatar-center img {
+        width: 140px;
+        height: 140px;
+    }
+    .hero {
+        padding: 32px 8px 20px 8px;
+    }
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+    .home-actions {
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+
